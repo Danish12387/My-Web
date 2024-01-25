@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <h2>Java Script String Functions</h2>
+    <script>
+        var str='This is a string.'
+        // console.log(str[2])
+        console.log(str)
+
+        //First occurence of a substring.
+        var position=str.indexOf('is')
+        console.log(position)
+
+        //Last occurence of a substring.
+        position=str.lastIndexOf('is')
+        console.log(position)
+
+        //Substring from a string.
+        // var substr=str.slice(1,9) ye negative number bhi leta hai.
+        // var substr=str.substring(1,9) ye negative numbers nhi leta.
+        var substr1=str.substr(1,2)
+        console.log(substr1)
+
+        var replace=str.replace('string', 'Danish')
+        console.log(replace)
+        console.log(replace.toUpperCase())
+        console.log(replace.toLowerCase())
+
+        var newstring=str.concat(' New String.')
+        console.log(newstring)
+
+        var strwithspaces='   this is a       whitespace.   '
+        console.log(strwithspaces)
+        console.log(strwithspaces.trim())
+
+        var char2=str.charAt(2)
+        console.log(char2)
+    </script>
+</body>
+</html>

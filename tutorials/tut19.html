@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height , width, borders and backgrounds</title>
+    <style>
+        #firstPara{
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            /* border-width: 4px;
+            border-color: green;
+            border-style: solid; */
+            border-radius: 13px;
+            border: 4px solid green; /*short form mai aese likhte hn aap ko border-width, border-color, border-style alag alag nhi likhna paray ga*/
+
+        }
+
+        #secondPara{
+            background-color: rgb(72, 255, 0);
+            height: 100px;
+            width: 455px;
+            border-top: 2px solid rgb(238, 130, 130);
+            border-right: 2px solid rgb(3, 47, 53);
+            border-left: 2px solid rgb(32, 20, 32);
+            border-bottom: 2px solid rgb(84, 135, 165);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 9px;
+            border-bottom-right-radius: 15px;
+        }
+        #thirdPara{
+            height: 500px;
+            width: 455px;
+            background-image: url('data:image/jpeg;base64,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');
+            border: 2px solid red;
+            background-repeat: no-repeat; /*is no-repeat ko likhne se image repeat nhi hoti*/
+            background-position: 123px 234px; /*top right, top left, centre top, bottom right, etc bhi use kar sakte hn or pixels mai bhi use kar sakte hn*/
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstPara">This is paragraph</p>
+  
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is my second paragraph</p>
+  
+    <h3>This is third heading</h3>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+</html>

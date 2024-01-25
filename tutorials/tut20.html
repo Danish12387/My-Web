@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: rgb(148, 236, 236);
+        }
+        .container{
+            background-color: blanchedalmond;
+            border: 2px solid rgb(156, 74, 74);
+
+            /* we can set top, bottom, left and rigth padding/margin like this */
+            /* padding-top: 40px;
+            padding-bottom: 40px; 
+            padding-left: 20px;
+            padding-right: 20px;*/
+
+            /* margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 4px;
+            margin-right: 4px; */
+
+            /* padding/margin: top right bottom left;  */
+            /*padding/margin: 23px 15px 17px 27px; */
+            
+            /* padding: y(top/bottom) x(left/right) */
+            /* margin: y(top/bottom) x(left/right) */
+            padding: 34px 19px; 
+            margin: 15px 19px;
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ad at. Totam non reiciendis unde, fugiat exercitationem iure cumque commodi accusamus impedit eveniet.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ad at. Totam non reiciendis unde, fugiat exercitationem iure cumque commodi accusamus impedit eveniet.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ad at. Totam non reiciendis unde, fugiat exercitationem iure cumque commodi accusamus impedit eveniet.</p>
+    </div>
+</body>
+</html>

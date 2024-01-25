@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none; /*text decoration none karne se readmore ke neechay se line hat gyi*/
+            color: black;
+        }
+        a:hover{
+            color: rgb(151, 9, 9);
+            background-color: aliceblue;
+        }
+        a:visited{
+            color: rgb(255, 60, 0);
+        }
+        a:active{
+            color: darkblue;
+        }
+        .btn{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            background: cornsilk;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: blueviolet;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3 style="text-align: center;">This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis doloremque distinctio dolorem? Sed at, veritatis quas velit esse error et ad, repellat vitae repudiandae nulla sit numquam? Vel, similique reprehenderit illum voluptas voluptate illo?</p>
+        <a href="https://google.com" class=btn>Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

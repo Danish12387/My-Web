@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        import matplotlib.pyplot as plt
+
+# years and quarters data
+years = ['1977', '1978', '1979', '1980']
+quarters = ['I', 'II', 'III', 'IV']
+
+# data values
+data = [    [102, 71, 47, 98],
+    [125, 106, 73, 231],
+    [281, 229, 209, 488],
+    [484, 447, 457, 966]
+]
+
+# plot data as time series
+fig, ax = plt.subplots()
+ax.plot(data[0], label=years[0])
+ax.plot(data[1], label=years[1])
+ax.plot(data[2], label=years[2])
+ax.plot(data[3], label=years[3])
+ax.set_xlabel('Quarters')
+ax.set_ylabel('Data')
+ax.set_title('Time Series')
+ax.legend()
+
+# compute 4-quarter centred moving average trend
+trend = []
+for i in range(2, len(data[0])-2):
+    trend.append((data[0][i-2] + data[0][i-1] + data[0][i] + data[0][i+1] + data[0][i+2])/5)
+trend.insert(0, 0)
+trend.insert(0, 0)
+trend.append(0)
+trend.append(0)
+
+# plot trend
+ax.plot(trend, label='4-Quarter Centred Moving Average Trend')
+ax.legend()
+
+plt.show()
+
+    </style>
+</body>
+</html>

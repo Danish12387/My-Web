@@ -1,0 +1,38 @@
+/* Reset styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Global styles */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Header styles */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,.1);
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;

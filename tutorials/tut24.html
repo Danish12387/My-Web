@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            /* margin auto ke saath width set karne se center mai ho jata hai */
+            margin: auto;
+            /* border: 2px solid red ; */
+            width: 1200px;
+            background-color: aquamarine;
+            border-radius: 25px;
+        }
+        img{
+            margin: auto;
+            display: block;
+            width: 45px;
+        }
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;
+            text-align: center;
+        }
+        .box{
+            border: 4px solid black;
+            background-color: rgb(0, 196, 130);
+            margin: 40px 0px;
+            padding: 23px;
+            display: inline-block; /*display: inline-block karne se boxes ek line mai ajate hn*/
+            width: 33%;
+            box-sizing: border-box; 
+        }
+        .container{
+            /* border: 3px solid black; */
+            margin: auto;
+            width: 1200px;
+            text-align: center;
+        }
+        .heading{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAB3CAMAAACKTQrTAAAAclBMVEX///8Yd/IAZ/EAcfIAbPH3+f8Gc/Kux/kAavFKi/QAb/HZ5PwAbvLD1Prt8v4PdfLm7f2fu/je5/x1o/aYuPjK2fuDq/ZAhvNYkPSmwPi3y/ktfvOStPd9p/aMsfdyn/UAWvBilvTT3/wAY/EAXvCPrPbpTUDvAAAE80lEQVR4nO2c6XayMBCGhZgAEYniwuZSbHv/t/ihXewHyTigk/CD92d74DxOtpk3CbPZpEmTJk2a9ALxZJUubkpXCXdN00tpcDjXWcVCv1HIqqzenILUNRVGPA1qyRgTQnm/UkI0f2J1kI67GdJ1LUPmGSTCON8uXDOaxJc5k3+D3pVqWiFaJq5JNeLryAfRf9vAz7Zj+wG88JjAwN9+gPTG9QPKKMSyfynMAtfMv0priY78vQXykQzigBnnGkgsLlyTN0pqOQT+qjh3PgIu1aDQfzeAt3RLH8SoydIk4bYDneJn4K+a793R75+L/U3xxhX95unY3/jPbuiPL6F3Ff/9i+gb/qN9+mL+Kvpm/G5t0y/7xV6w+CrJhNKN9ri0S59oKbS65vgs25zW6+1hf46qphBj7YcVW9mk5xE6R2PiXPxf5iaL5bG9VIvMZhm5xuY5Qm5WGrBdJ7+WJ3v0Fx9JL3N9p1h2ywN/Zw0f2XVUeDB0CQ2+ve6zRXYdtja9QYPvsYMdeg67Cb8KzTw6fI/Zyf43uOCz2vwKPb6V5Cf1cMGvgKlci6/UxQL+Hhd8sBDR4nvSQvi5xAXfh16ix/dC+t6PLLBiMAsz4Evy1JNXKHpPgv3YgK8q6rm/xBkLQu+B8ORLpcGUk9SVeyfZMuDrRmF5rPPopswwfqjnzgS54GrCuKtCoZp0/yrjcyFt4rxEJmvzjv90QfmgIW3dckbm+WF7JyvJUE+KnBQfOe94fnvkmgZrW6RzzwVbI/ptihzZbIrS9QywVVYHP0T+btKp84S1kzv478gHGeHCy2tshd7Bx5aXKqLr/EmFtUeG4xMWLQkWYji+9063cKEdhifwCR0HQ6L4Uvw53Y5pgLZlh+PDhcJT2qJ92eH4km636ITeAx2Oz+g2K+AqPZ7f9dbGf5v/FfAWbaVgAV+ug7s6S38R/BWw+kH2ECV+J0c2KwFyD8Log30/xB+x2AHvIez74MzTA78A8AlnHnDe74H/CXSe2GhLPy1w1e2BD5WcId2qC+Y8eHyeA4krYc4DZpx4/BWUdxNmnGC+j8dfAH1QCbp8H6y28Pg7oBFVTmg1QLUuHr8A5l/KWncWvAT/DLyF1Gm4ABtDeHzIcCP1eSCXDY8Prd20Dj+w4KBTNsilJvY4gUlDRH/UCWJ1/5/J3L/FgNZhToBuK+5S7x2XTd3/a34Ftb+P3V0ZWCyS70yXOJtwID753hbH+YTD8Ol3FpH7usPw6fd1ZxzV+YfhxxbOlKDONAzClzbOo6aYOA7BV8rKfQrM4d8h+HbO88w44kDPIHxLdynWj8M/AD+2dJYNc5KwP76ydxB18RCmP75v4yTYtx6eou2NL611ndnVqXmwePXFt3uGeZY8mH164ls+QQ6bxP3xpeXz+1e7Fop/P3xCW9YoMPXshe/i7gp896YPvqubW0ez3d8D39W9LejWHB7fTc/50sEUfzS+yzuLTeVuONGMxFex4zvfl0y7AODwWWUx0dErqXUNgMIfwW3p2dX66TYAAp/JkXwsYFV3vtHwEF/IejzfXFnmrS9kPMIPI+tZDiReVP+dUQbxFfOK0X0qpsh9gcEXfuQgQ3ssvsvlzxdiDPhKSJYvRxf5H62KWt2+z6PFF6Go1+MZsDrxVXlmgn208T8Ek+dy5F9H+taq/GxzfpbjDvukSZMmTZpEr39p6kaTafVFsQAAAABJRU5ErkJggg==" alt="">
+        <h3>Welcome to Danish's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading 1</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nam distinctio culpa? Odit blanditiis consequatur recusandae! Exercitationem soluta impedit sequi accusamus numquam itaque fugit illum. Voluptatibus quo consequatur expedita eligendi libero eius ea, excepturi cumque numquam odio vero incidunt fugiat illo impedit cum dolorum?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading 2</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nam distinctio culpa? Odit blanditiis consequatur recusandae! Exercitationem soluta impedit sequi accusamus numquam itaque fugit illum. Voluptatibus quo consequatur expedita eligendi libero eius ea, excepturi cumque numquam odio vero incidunt fugiat illo impedit cum dolorum?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading 3</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur nam distinctio culpa? Odit blanditiis consequatur recusandae! Exercitationem soluta impedit sequi accusamus numquam itaque fugit illum. Voluptatibus quo consequatur expedita eligendi libero eius ea, excepturi cumque numquam odio vero incidunt fugiat illo impedit cum dolorum?</p>
+        </div>
+    </div>
+</body>
+</html>
